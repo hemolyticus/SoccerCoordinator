@@ -102,3 +102,16 @@ var players: [[String: Any]] = [player1, player2, player3, player4, player5, pla
 var experienced =  [[String:Any]]()
 var inexperienced = [[String:Any]]()
 
+//Team Variables
+
+var teamSharks: [[String: Any]] = []
+var teamDragons: [[String: Any]] = []
+var teamRaptors: [[String: Any]] = []
+var teams = [teamSharks, teamDragons, teamRaptors]
+
+
+//Team Practice Date and Times
+var teamDragonsPractice: [String: String] = ["teamName": "Dragons", "date": "March 17", "time": "1:00 pm"]
+var teamSharksPractice: [String: String] = ["teamName": "Sharks", "date":"March 17", "time":"3:00 pm"]
+var teamRaptorsPractice: [String: String] = ["teamName": "Raptors", "date":"March 18","time":"1:00 pm"]
+
