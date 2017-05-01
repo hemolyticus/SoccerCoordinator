@@ -216,5 +216,19 @@ func sortPlayersIntoTeams()
     
 }
 
+//This function prints individual letters to the guardians of the players informing them of the team the child belongs to, team practice date and times
+func  printLetters(teamName: [[String: Any]], practice: [String: String])
+{
+    
+    for member in teamName
+    {
+        
+        
+        print("Dear \(member["guardians"]!), Please be informed that your child, \(member["playerName"]!)  has been selected to join Team \(practice["teamName"]!). The first practice is on \(practice["date"]!) at \(practice["time"]!). Thank you ")
+        
+    }
+    
+}
+
 
 
