@@ -120,3 +120,30 @@ var teamRaptorsPractice: [String: String] = ["teamName": "Raptors", "date":"Marc
 var totalPlayersPerTeam = players.count / teams.count
 var totalNumberOfExperiencedPerTeam = Int()
 var totalNumberOfInexperiencedPerTeam  =  Int()
+
+//Functions
+
+//This function determines if the players has soccer experience and adds the player to the appropriate variable: experience and inxeperienced
+func sortPlayerExperience()
+{
+    for player in players
+    {
+        
+        if player["experiencedInSoccer"]  as! Bool == true{
+            experienced.append(player)
+            
+        }else
+        {
+            inexperienced.append(player)
+            
+        }
+        
+        
+    }
+    
+    
+    totalNumberOfExperiencedPerTeam = experienced.count / teams.count
+    totalNumberOfInexperiencedPerTeam = experienced.count / teams.count
+    
+    
+}
