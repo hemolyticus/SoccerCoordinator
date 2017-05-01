@@ -230,5 +230,10 @@ func  printLetters(teamName: [[String: Any]], practice: [String: String])
     
 }
 
-
+//Function Calls
+sortPlayerExperience()
+sortPlayersIntoTeams()
+printLetters(teamName: teamSharks, practice: teamSharksPractice)
+printLetters(teamName: teamRaptors, practice: teamRaptorsPractice)
+printLetters(teamName: teamDragons, practice: teamDragonsPractice)
 
