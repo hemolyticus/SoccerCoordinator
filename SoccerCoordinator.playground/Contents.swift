@@ -226,12 +226,18 @@ func sortPlayersIntoTeams()
 func  printLetters(teamName: [[String: Any]], practice: [String: String])
 {
     
+    var letters : [String] = [String]()
     for member in teamName
     {
         
         
-        print("Dear \(member["guardians"]!), Please be informed that your child, \(member["playerName"]!)  has been selected to join Team \(practice["teamName"]!). The first practice is on \(practice["date"]!) at \(practice["time"]!). Thank you ")
+       letters.append("Dear \(member["guardians"]!), Please be informed that your child, \(member["playerName"]!)  has been selected to join Team \(practice["teamName"]!). The first practice is on \(practice["date"]!) at \(practice["time"]!). Thank you.")
         
+    }
+    
+    for letter in letters
+    {
+        print(letter)
     }
     
 }
