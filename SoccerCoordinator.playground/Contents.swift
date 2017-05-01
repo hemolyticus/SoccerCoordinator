@@ -147,3 +147,74 @@ func sortPlayerExperience()
     
     
 }
+
+
+//This function separate players equally into 3 teams based on  experience
+func sortPlayersIntoTeams()
+{
+    var experiencedSharksCounter: Int = 0
+    var inexperiencedSharksCounter: Int = 0
+    var experiencedRaptorsCounter: Int = 0
+    var inexperiencedRaptorsCounter: Int = 0
+    var experiencedDragonsCounter: Int = 0
+    var inexperiencedDragonsCounter: Int = 0
+    
+    // Nested while statements that adds equal amounts of experienced and inexperienced team player for the Sharks
+    while  teamSharks.count < totalPlayersPerTeam
+    {
+        
+          while experiencedSharksCounter < totalNumberOfExperiencedPerTeam {
+            teamSharks.append(experienced.removeFirst())
+            experiencedSharksCounter += 1
+            
+        }
+        
+        while inexperiencedSharksCounter < totalNumberOfInexperiencedPerTeam {
+            teamSharks.append(inexperienced.removeFirst())
+            inexperiencedSharksCounter += 1
+            
+        }
+        
+    // Nested while statements that adds equal amounts of experienced and inexperienced team player for the Raptors
+        while  teamRaptors.count < totalPlayersPerTeam
+        {
+            
+            while experiencedRaptorsCounter < totalNumberOfExperiencedPerTeam {
+                teamRaptors.append(experienced.removeFirst())
+                experiencedRaptorsCounter += 1
+                
+            }
+            
+            while inexperiencedRaptorsCounter < totalNumberOfInexperiencedPerTeam {
+                teamRaptors.append(inexperienced.removeFirst())
+                inexperiencedRaptorsCounter += 1
+                
+                
+                
+            }
+        }
+        
+        
+// Nested while statements that adds equal amounts of experienced and inexperienced team player for the Dragons
+        while  teamDragons.count < totalPlayersPerTeam
+        {
+            
+            while experiencedDragonsCounter < totalNumberOfExperiencedPerTeam {
+                teamDragons.append(experienced.removeFirst())
+                experiencedDragonsCounter += 1
+                
+            }
+            
+            while inexperiencedDragonsCounter < totalNumberOfInexperiencedPerTeam {
+                teamDragons.append(inexperienced.removeFirst())
+                inexperiencedDragonsCounter += 1
+                
+            }
+        }
+       
+    }
+    
+}
+
+
+
