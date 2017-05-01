@@ -1,3 +1,9 @@
+/*
+ Project Name: Soccer Coordinator
+ Student: Mel John del Barrio
+ GitHub: hemolyticus
+ Submission Date: 1 May 2017
+ */
 //Dictionary of players
 
 let player1: [String: Any] = ["playerName": "Joe Smith",
@@ -237,3 +243,4 @@ printLetters(teamName: teamSharks, practice: teamSharksPractice)
 printLetters(teamName: teamRaptors, practice: teamRaptorsPractice)
 printLetters(teamName: teamDragons, practice: teamDragonsPractice)
 
+//D
