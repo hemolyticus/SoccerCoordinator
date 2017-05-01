@@ -115,3 +115,8 @@ var teamDragonsPractice: [String: String] = ["teamName": "Dragons", "date": "Mar
 var teamSharksPractice: [String: String] = ["teamName": "Sharks", "date":"March 17", "time":"3:00 pm"]
 var teamRaptorsPractice: [String: String] = ["teamName": "Raptors", "date":"March 18","time":"1:00 pm"]
 
+
+//Players count
+var totalPlayersPerTeam = players.count / teams.count
+var totalNumberOfExperiencedPerTeam = Int()
+var totalNumberOfInexperiencedPerTeam  =  Int()
